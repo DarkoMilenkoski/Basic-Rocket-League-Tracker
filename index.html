@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #001538">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/rl-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-4">Tracker
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-pills">
+              <li class="nav-item me-4">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Leaderboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Premium</a>
+              </li>
+            </ul>
+            <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="profileSearch">
+                            <button class="btn btn-outline-success me-4" type="submit" id="button">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          myAccount
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" style="background-color: #000b28" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+          </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="nameBar"></div>
+    <div class="stats-box" style="background-color: #000f26">
+        <div class="column1">
+            <div class="box1" id="season">
+                <img src="" alt="icon" height="mx-auto" id="seasonIcon" width="80px" height="80px">
+                <div class="text">
+                    <div id="seasonLevel" style="color: #b5d0ff"></div>
+                    <div id="seasonRank"></div>
+                    <div id="seasonTop"></div>
+                </div>
+            </div>
+            <div class="box2">
+              <header>Lifetime</header>
+              <div class="lifetimeContainer">
+                <div class="lifetimeBox1">
+                  <div class="rating-bar">
+                    <div id="winsPercent"></div>
+                  </div>
+                  <div class="wins">
+                    <div class="winsLabel" id="winsLabel"></div>
+                    <div class="winsValue" id="winsValue"></div>
+                    <div class="winsTop" id="winsTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox2">
+                  <div class="rating-bar">
+                    <div id="gsRatioPercent"></div>
+                  </div>
+                  <div class="gsRatio">
+                    <div class="gsRatioLabel" id="gsRatioLabel"></div>
+                    <div class="gsRatioValue" id="gsRatioValue"></div>
+                    <div class="gsRatioTop" id="gsRatioTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox3">
+                  <div class="rating-bar">
+                    <div id="goalsPercent"></div>
+                  </div>
+                  <div class="goals">
+                    <div class="goalsLabel" id="goalsLabel"></div>
+                    <div class="goalsValue" id="goalsValue"></div>
+                    <div class="goalsTop" id="goalsTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox4">
+                  <div class="rating-bar">
+                    <div id="shotsPercent"></div>
+                  </div>
+                  <div class="shots">
+                    <div class="shotsLabel" id="shotsLabel"></div>
+                    <div class="shotsValue" id="shotsValue"></div>
+                    <div class="shotsTop" id="shotsTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox5">
+                  <div class="rating-bar">
+                    <div id="assistsPercent"></div>
+                  </div>
+                  <div class="assists">
+                    <div class="assistsLabel" id="assistsLabel"></div>
+                    <div class="assistsValue" id="assistsValue"></div>
+                    <div class="assistsTop" id="assistsTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox6">
+                  <div class="rating-bar">
+                    <div id="savesPercent"></div>
+                  </div>
+                  <div class="saves">
+                    <div class="savesLabel" id="savesLabel"></div>
+                    <div class="savesValue" id="savesValue"></div>
+                    <div class="savesTop" id="savesTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox7">
+                  <div class="rating-bar">
+                    <div id="mvpsPercent"></div>
+                  </div>
+                  <div class="mvps">
+                    <div class="mvpsLabel" id="mvpsLabel"></div>
+                    <div class="mvpsValue" id="mvpsValue"></div>
+                    <div class="mvpsTop" id="mvpsTop"></div>
+                  </div>
+                </div>
+                <div class="lifetimeBox8">
+                  <div class="rating-bar">
+                    <div id="trnScorePercent"></div>
+                  </div>
+                  <div class="trnScore">
+                    <div class="trnScoreLabel" id="trnScoreLabel"></div>
+                    <div class="trnScoreValue" id="trnScoreValue"></div>
+                    <div class="trnScoreTop" id="trnScoreTop"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="column2">
+          <div class="box3">
+            <header>Playlists</header>
+            <table class="playlistTable">
+              <thead>
+                <tr>
+                  <td colspan="2">Playlist / Rank</th>
+                  <td>Rating</th>
+                  <td>Div Up</th>
+                  <td>Div Down</th>
+                  <td>Matches</th>
+                </tr>
+              </thead>
+              <tbody id="playlistTableBody"></tbody>
+            </table>
+          </div>
+          <div class="box4">
+              <img src="" alt="" width="100%">
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

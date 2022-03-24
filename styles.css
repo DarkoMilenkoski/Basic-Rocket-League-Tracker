@@ -1,0 +1,240 @@
+.banner {
+    background: url("https://trackercdn.com/cdn/rocketleague.tracker.network/images/rl-profile-header.jpg") no-repeat scroll center top transparent;
+    height: 300px;
+}
+.nameBar{
+    background-color: #123280;
+    width: 100%; 
+    height: 50px;
+}
+.stats-box{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.box1, .box2, .box3, .box4{
+    margin: 20px;
+    border-radius: 8px;
+}
+.column1, .column2{
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+    top: 5rem;
+    position: sticky;
+    align-self: flex-start;
+}
+.box1{
+    width: 300px;
+    height: 100px;
+    background-image: linear-gradient(to right, #4c148e, #239ad9);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+.goldLetters{
+    color: #ffd700;
+}
+.blueLetters{
+    color: #2b9fea;
+}
+.orangeLetters{
+    color: #e68617;
+}
+.text{
+    /* width: 100%;
+    height: 100%; */
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text>div{
+    line-height: 105%;
+}
+#seasonLevel{
+    font-size: 15px;
+}
+#seasonRank{
+    font-weight: bold;
+    font-size: 20px;
+}
+#seasonTop{
+    font-size: 15px;
+}
+
+.box2{
+    color: white;
+    background-color: #001538;
+    border: 1px solid #041d59;
+    box-shadow: 2px 2px 2px black;
+    width: 300px;
+}
+header{
+    text-align: center;
+    height: 60px;
+    line-height: 60px; /* primitive */
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid #123280;
+}
+.box3{
+    color: white;
+    background-color: #001538;
+    border: 1px solid #041d59;
+    box-shadow: 2px 2px 2px black;
+    width: 800px;
+    /* height: 1200px; */
+}
+.playlistTable{
+    width: 100%;
+    /* height: 400px; */
+}
+thead{
+    background-color: #123280;
+    height: 40px;
+    font-size: 0.875rem;
+    color: #b5d0ff;
+}
+tr:nth-child(even) {
+    background-color: #041d59;
+}
+td{
+    padding: 0.5rem;
+}
+.playlistTable>thead>tr>td:first-child{
+    padding-left: 1.25rem;
+}
+.playlistTable>tbody>tr>td:first-child{
+    padding-left: 1.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.playlistTable>tbody>tr>.playlistIcon{
+    width: 50px;
+}
+.playlistTable>tbody>tr>.playlistInfo>.playlistName{
+    font-weight: bold;
+}
+.playlistTable>tbody>tr>.playlistInfo>.playlistRank{
+    font-size: 10px;
+    color: #b5d0ff;
+}
+.playlistTable>tbody>tr>.playlistRating{
+    display: flex;
+}
+.playlistTable>tbody>tr>.playlistRating>.rating-bar2{
+    background-color: #334460;
+    width: 4px;
+    height: 40px;
+    border-radius: 2px;
+    position: relative;
+}
+.rating-bar2>div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1d9cf3;
+    border-radius: 2px;
+    height: 50%;
+}
+.playlistTable>tbody>tr>.playlistRating>.rating{
+    padding-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.playlistTable>tbody>tr>.playlistRating>.rating>.ratingValue{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 105%;
+}
+.playlistTable>tbody>tr>.playlistRating>.rating>.ratingTop{
+    font-size: 10px;
+}
+.playlistTable>tbody>tr>.playlistUp>.up{
+    color: #5ee790;
+}
+.playlistTable>tbody>tr>.playlistDown>.down{
+    color: #e4485d;
+}
+.playlistTable>tbody>tr>.playlistMatches>.matchesStreak{
+    font-size: 12px;
+    line-height: 120%;
+}
+.playlistTable>tbody>tr>.playlistMatches>.matchesValue{
+    font-size: 20px;
+    line-height: 120%;
+}
+.box4{
+    background-color: yellow;
+    width: 800px;
+    height: 800px;
+}
+
+.lifetimeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.lifetimeContainer>div{
+    height: 60px;
+    width: 50%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+.lifetimeContainer>div>.rating-bar{
+    background-color: #334460;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 10px;
+}
+.rating-bar>div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1d9cf3;
+    border-radius: 2px;
+}
+.lifetimeContainer>div:hover{
+    background-color: #021f59;
+    border-radius: 10px;
+}
+.lifetimeContainer>div>div:nth-child(2){
+    /* padding-left: 10px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lifetimeContainer>div>div:nth-child(2)>div{
+    line-height: 110%;
+}
+.lifetimeContainer>div>div:nth-child(2)>div:nth-child(1){
+    font-size: 15px;
+    color: #b5d0ff;
+}
+.lifetimeContainer>div>div:nth-child(2)>div:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+.lifetimeContainer>div>div:nth-child(2)>div:nth-child(3){
+    font-size: 9px;
+    color: #b5d0ff;
+}
